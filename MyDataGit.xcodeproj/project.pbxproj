@@ -13,6 +13,13 @@
 		3EBE63A9224D046C00A16E7E /* MyDataGit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE63A7224D046C00A16E7E /* MyDataGit.xcdatamodeld */; };
 		3EBE63AB224D046D00A16E7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EBE63AA224D046D00A16E7E /* Assets.xcassets */; };
 		3EBE63AE224D046D00A16E7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EBE63AC224D046D00A16E7E /* LaunchScreen.storyboard */; };
+		3EBE63C2224D055E00A16E7E /* MainScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE63BE224D055E00A16E7E /* MainScreenPresenter.swift */; };
+		3EBE63C3224D055E00A16E7E /* MainScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE63BF224D055E00A16E7E /* MainScreenRouter.swift */; };
+		3EBE63C4224D055E00A16E7E /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE63C0224D055E00A16E7E /* MainScreenViewController.swift */; };
+		3EBE63C5224D055E00A16E7E /* MainScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE63C1224D055E00A16E7E /* MainScreenProtocols.swift */; };
+		3EBE63C7224D065100A16E7E /* AKUIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE63C6224D065100A16E7E /* AKUIView+Extensions.swift */; };
+		3EBE63CA224D065900A16E7E /* UIColor+StyleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE63C8224D065900A16E7E /* UIColor+StyleExtensions.swift */; };
+		3EBE63CB224D065900A16E7E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE63C9224D065900A16E7E /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		3EBE63AA224D046D00A16E7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3EBE63AD224D046D00A16E7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3EBE63AF224D046D00A16E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EBE63BE224D055E00A16E7E /* MainScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenPresenter.swift; sourceTree = "<group>"; };
+		3EBE63BF224D055E00A16E7E /* MainScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenRouter.swift; sourceTree = "<group>"; };
+		3EBE63C0224D055E00A16E7E /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		3EBE63C1224D055E00A16E7E /* MainScreenProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenProtocols.swift; sourceTree = "<group>"; };
+		3EBE63C6224D065100A16E7E /* AKUIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AKUIView+Extensions.swift"; sourceTree = "<group>"; };
+		3EBE63C8224D065900A16E7E /* UIColor+StyleExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+StyleExtensions.swift"; sourceTree = "<group>"; };
+		3EBE63C9224D065900A16E7E /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +70,12 @@
 		3EBE639F224D046C00A16E7E /* MyDataGit */ = {
 			isa = PBXGroup;
 			children = (
+				3EBE63BD224D053700A16E7E /* Main screen */,
 				3EBE63A0224D046C00A16E7E /* AppDelegate.swift */,
 				3EBE63A2224D046C00A16E7E /* ViewController.swift */,
+				3EBE63C6224D065100A16E7E /* AKUIView+Extensions.swift */,
+				3EBE63C8224D065900A16E7E /* UIColor+StyleExtensions.swift */,
+				3EBE63C9224D065900A16E7E /* Utils.swift */,
 				3EBE63A4224D046C00A16E7E /* Main.storyboard */,
 				3EBE63AA224D046D00A16E7E /* Assets.xcassets */,
 				3EBE63AC224D046D00A16E7E /* LaunchScreen.storyboard */,
@@ -65,6 +83,17 @@
 				3EBE63A7224D046C00A16E7E /* MyDataGit.xcdatamodeld */,
 			);
 			path = MyDataGit;
+			sourceTree = "<group>";
+		};
+		3EBE63BD224D053700A16E7E /* Main screen */ = {
+			isa = PBXGroup;
+			children = (
+				3EBE63BE224D055E00A16E7E /* MainScreenPresenter.swift */,
+				3EBE63BF224D055E00A16E7E /* MainScreenRouter.swift */,
+				3EBE63C0224D055E00A16E7E /* MainScreenViewController.swift */,
+				3EBE63C1224D055E00A16E7E /* MainScreenProtocols.swift */,
+			);
+			path = "Main screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +168,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EBE63A3224D046C00A16E7E /* ViewController.swift in Sources */,
+				3EBE63CA224D065900A16E7E /* UIColor+StyleExtensions.swift in Sources */,
+				3EBE63C2224D055E00A16E7E /* MainScreenPresenter.swift in Sources */,
 				3EBE63A9224D046C00A16E7E /* MyDataGit.xcdatamodeld in Sources */,
+				3EBE63C5224D055E00A16E7E /* MainScreenProtocols.swift in Sources */,
+				3EBE63CB224D065900A16E7E /* Utils.swift in Sources */,
+				3EBE63C7224D065100A16E7E /* AKUIView+Extensions.swift in Sources */,
+				3EBE63C3224D055E00A16E7E /* MainScreenRouter.swift in Sources */,
 				3EBE63A1224D046C00A16E7E /* AppDelegate.swift in Sources */,
+				3EBE63C4224D055E00A16E7E /* MainScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
