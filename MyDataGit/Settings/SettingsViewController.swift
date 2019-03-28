@@ -19,7 +19,7 @@ final class SettingsViewController: UIViewController {
         view.textColor = UIColor.redColor
         view.font = UIFont.boldSystemFont(ofSize: 17)
         view.textAlignment = .center
-        view.text = "Settings"
+        view.text = "Settings 1.2.1"
         return view
     }()
     
