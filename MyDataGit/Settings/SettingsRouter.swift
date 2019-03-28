@@ -1,5 +1,5 @@
 //  
-//  MainScreenRouter.swift
+//  SettingsRouter.swift
 //  MyDataGit
 //
 //  Created by Andrey Kulinskiy on 3/28/19.
@@ -8,18 +8,18 @@
 
 import UIKit
 
-final class MainScreenRouter {
+final class SettingsRouter {
     
     // MARK: - property
-    private weak var viewController: MainScreenViewController?
+    private weak var viewController: SettingsViewController?
     
     // MARK: - Init
     
     // MARK: - Methods
-    private func instantiateViewController() -> MainScreenViewController {
+    private func instantiateViewController() -> SettingsViewController {
     
-        let viewController = MainScreenViewController()
-        let presenter = MainScreenPresenter()
+        let viewController = SettingsViewController()
+        let presenter = SettingsPresenter()
         presenter.attach(router: self)
         presenter.attach(view: viewController)
         viewController.attach(presenter: presenter)
@@ -42,9 +42,7 @@ final class MainScreenRouter {
     }
 }
 
-// MARK: - MainScreenRouterProtocol
-extension MainScreenRouter: MainScreenRouterProtocol {
-    func presentSettingsScreen() {
-        SettingsRouter().push(to: self.viewController?.navigationController)
-    }
+// MARK: - SettingsRouterProtocol
+extension SettingsRouter: SettingsRouterProtocol {
+    
 }

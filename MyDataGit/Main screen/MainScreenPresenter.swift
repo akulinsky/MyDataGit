@@ -26,6 +26,10 @@ extension MainScreenPresenter: MainScreenPresenterProtocol {
     func reloadData() {
         print(#function)
     }
+    
+    func showSettingsScreen() {
+        self.router?.presentSettingsScreen()
+    }
 }
 
 extension MainScreenPresenter {

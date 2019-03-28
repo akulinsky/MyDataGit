@@ -1,5 +1,5 @@
 //  
-//  MainScreenViewController.swift
+//  SettingsViewController.swift
 //  MyDataGit
 //
 //  Created by Andrey Kulinskiy on 3/28/19.
@@ -8,10 +8,10 @@
 
 import UIKit
 
-final class MainScreenViewController: UIViewController {
+final class SettingsViewController: UIViewController {
     
     // MARK: - property
-    private var presenter: MainScreenPresenterProtocol?
+    private var presenter: SettingsPresenterProtocol?
     
     lazy var lblName: UILabel = {
         let view = UILabel()
@@ -19,7 +19,7 @@ final class MainScreenViewController: UIViewController {
         view.textColor = UIColor.redColor
         view.font = UIFont.boldSystemFont(ofSize: 17)
         view.textAlignment = .center
-        view.text = "Main Screen"
+        view.text = "Settings"
         return view
     }()
     
@@ -35,11 +35,10 @@ final class MainScreenViewController: UIViewController {
     // MARK: - Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.presenter?.didLoad()
         
         self.title = "Main Screen"
         self.view.backgroundColor = UIColor.white
-        
-        self.presenter?.didLoad()
         
         self.view.addSubview(self.lblName)
         self.lblName.sizeToFit()
@@ -62,18 +61,19 @@ final class MainScreenViewController: UIViewController {
     
     // MARK: - Actions
     @objc func clickBtnNext(_ sender: UIButton) {
-        self.presenter?.showSettingsScreen()
+        //self.presenter?.clickBuy()
+        print("clickBtnNext")
     }
 }
 
-extension MainScreenViewController {
-    func attach(presenter: MainScreenPresenterProtocol) {
+extension SettingsViewController {
+    func attach(presenter: SettingsPresenterProtocol) {
         self.presenter = presenter
     }
 }
 
-// MARK: - MainScreenViewProtocol
-extension MainScreenViewController: MainScreenViewProtocol {
+// MARK: - SettingsViewProtocol
+extension SettingsViewController: SettingsViewProtocol {
     func showHUD() { }
     
     func hideHUD() { }
