@@ -35,7 +35,6 @@ final class MainScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Main Screen"
         self.view.backgroundColor = UIColor.white
         
         self.presenter?.didLoad()
