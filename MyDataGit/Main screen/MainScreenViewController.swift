@@ -19,7 +19,7 @@ final class MainScreenViewController: UIViewController {
         view.textColor = UIColor.redColor
         view.font = UIFont.boldSystemFont(ofSize: 22)
         view.textAlignment = .center
-        view.text = "Main Screen Test 22"
+        view.text = "Main Screen Test 33"
         return view
     }()
     
@@ -36,7 +36,7 @@ final class MainScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Main Screen 22"
+        self.title = "Main Screen 33"
         self.view.backgroundColor = UIColor.white
         
         self.presenter?.didLoad()
