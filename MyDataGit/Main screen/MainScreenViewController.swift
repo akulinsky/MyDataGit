@@ -17,7 +17,7 @@ final class MainScreenViewController: UIViewController {
         let view = UILabel()
         view.backgroundColor = UIColor.clear
         view.textColor = UIColor.redColor
-        view.font = UIFont.boldSystemFont(ofSize: 17)
+        view.font = UIFont.boldSystemFont(ofSize: 22)
         view.textAlignment = .center
         view.text = "Main Screen Test 22"
         return view
