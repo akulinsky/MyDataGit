@@ -19,7 +19,6 @@ final class MainScreenViewController: UIViewController {
         view.textColor = UIColor.redColor
         view.font = UIFont.boldSystemFont(ofSize: 17)
         view.textAlignment = .center
-        view.text = "Main Screen test"
         return view
     }()
     
