@@ -19,7 +19,7 @@ final class SettingsViewController: UIViewController {
         view.textColor = UIColor.redColor
         view.font = UIFont.boldSystemFont(ofSize: 17)
         view.textAlignment = .center
-        view.text = "Settings 1.2.1"
+        view.text = "Settings 1.2.2"
         return view
     }()
     
@@ -37,7 +37,7 @@ final class SettingsViewController: UIViewController {
         super.viewDidLoad()
         self.presenter?.didLoad()
         
-        self.title = "Main Screen"
+        self.title = "Main Screen 2"
         self.view.backgroundColor = UIColor.white
         
         self.view.addSubview(self.lblName)
