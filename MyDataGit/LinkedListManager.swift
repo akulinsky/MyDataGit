@@ -75,8 +75,6 @@ class ItemList {
 class LinkedListManager {
     
     class func start() {
-        print("======Start=======")
-        
         let list = ItemList()
         list.insert(item: Item(value: 1))
         list.insert(item: Item(value: 2))
@@ -98,7 +96,5 @@ class LinkedListManager {
 
         // print reverse items with recursion
         list.printItems()
-        
-        print("======End=======")
     }
 }
