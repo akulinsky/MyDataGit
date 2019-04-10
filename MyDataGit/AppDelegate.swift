@@ -21,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigation = UINavigationController(rootViewController: mainScreen)
         self.window?.rootViewController = navigation
         
+        LinkedListManager.start()
+        
         return true
     }
 
